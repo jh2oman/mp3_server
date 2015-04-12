@@ -9,9 +9,9 @@ var bodyParser = require('body-parser');
 var router = express.Router();
 //replace this with your Mongolab URL
 mongoose.connect('mongodb://jacob:hershey5@ds045137.mongolab.com:45137/mp3');
-
 // Create our Express application
 var app = express();
+
 var tasks = require('./routes/tasks');
 var users = require('./routes/users');
 var homeRoute = router.route('/');

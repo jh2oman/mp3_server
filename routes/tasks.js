@@ -68,7 +68,7 @@ router.post('/', function(req, res) {
           res.end();
         }
         else {
-          res.status(200);
+          res.status(201);
           res.json({'message':'OK','data':tsk});
           res.end();
         }
