@@ -2,7 +2,9 @@
 
 ##Overview
 
-Stuff all about the project heres how to do a link [Firebase](https://www.firebase.com)
+This task management application was the third MP I completed for CS498 – The Art and Science of Web Development. The application is separated into two parts, the [client side](https://github.com/jh2oman/mp3_client) and the server side. The client side features an Angular frontend, and the server side features a Node.Js, Express, and Mongo backend. Everything combined makes this a full stack MEAN application written entirely in Javascript. The backend is complete with a RESTful API with GET, POST, PUT, and DELETE expressions for Users and Tasks. The frontend utilizes many of Angular’s organizational features such as factories, services, and controllers. I am particularly proud of this task manager because it is my time creating an API or creating a full stack application without using a framework such as Rails or Meteor.
+
+Stuff all about the project heres how to do a link 
 
 ## Design
 
