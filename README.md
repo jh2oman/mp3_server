@@ -18,10 +18,9 @@ tasks/id | GET, PUT, DELETE
 
 In addition, the api supports the following JSON encoded query string paramaters for the GET requests
 
-## Users/Tasks
+## Schema 
 
-
-An example of a sucessful GET:task return. The "message" component supplies a quick status for error handling. The "data" component contains the JSON response object.
+An example of a sucessful GET:task return showing the schema for Task. The "message" component supplies a quick status for error handling. The "data" component contains the JSON response object.
 
 ```json
 {
@@ -39,7 +38,7 @@ An example of a sucessful GET:task return. The "message" component supplies a qu
 }
 ```
 
-And an example of a sucessful GET:users return.
+And an example of a sucessful GET:users return showing the schema for User.
 
 ```json
 {
@@ -54,6 +53,7 @@ And an example of a sucessful GET:users return.
             }
 }
 ```
+##Special Queries 
 
 Paramater | Description
 ------|------------
