@@ -18,6 +18,43 @@ tasks/id | GET, PUT, DELETE
 
 In addition, the api supports the following JSON encoded query string paramaters for the GET requests
 
+## Users/Tasks
+
+
+An example of a sucessful GET:task return. The "message" component supplies a quick status for error handling. The "data" component contains the JSON response object.
+
+```json
+{
+    "message": "OK",
+    "data": {
+                "_id":"55d42f0d232c5d9c1bc23d2f",
+                "name": "Take out the laundry",
+                "description": "Mom said the laundry needed to be done. ugh!",
+                "deadline": "2015-08-19T07:23:57.947Z",
+                "completed": false,
+                "assignedUser": "55d42ecc232c5d9c1bc23d2c",
+                "assignedUserName":"Jacob Waterman",
+                "deadline":"2015-08-27T05:00:00.000Z"
+            }
+}
+```
+
+And an example of a sucessful GET:users return.
+
+```json
+{
+    "message":"User Retrieved",
+    "data":{
+                "_id":"55d42ecc232c5d9c1bc23d2c",
+                "email":"jwaterm2@illinois.edu",
+                "name":"Jacob",
+                "__v":1,
+                "dateCreated":"2015-08-19T07:22:52.536Z",
+                "pendingTasks":["55d42f0d232c5d9c1bc23d2f"]
+            }
+}
+```
+
 Paramater | Description
 ------|------------
 where | Filter results based on the JSON query
@@ -38,20 +75,5 @@ users?sort={"name": 1} | Returns a list of users sorted by name
 users?select={"_id": 0} | Returns a list of users without the _id field
 users?skip=60&limit=20 | Returns user number 61 to 80
 
-An example of a sucessful GET:task return. The "message" component supplies a quick status for error handling. The "data" component contains the JSON response object.
 
-```json
-{
-    "message": "OK",
-    "data": {
-                "_id":"55d42f0d232c5d9c1bc23d2f",
-                "name": "Take out the laundry",
-                "description": "Mom said the laundry needed to be done. ugh!",
-                "deadline": "2015-08-19T07:23:57.947Z",
-                "completed": false,
-                "assignedUser": "55d42ecc232c5d9c1bc23d2c",
-                "assignedUserName":"Jacob Waterman",
-                "deadline":"2015-08-27T05:00:00.000Z"
-            }
-}
-```
+
